@@ -1,0 +1,66 @@
+body {
+    background-color: #4c91d6;
+}
+.song-img{
+    width: 220px;
+    height: 60%;
+    border-radius: 50%;
+    border: 8px solid #d5d5e6;
+    box-shadow: 0 10px 60px rgba(255,26,26,0.22);
+}
+.audio {
+    display: block;
+    margin: 10px auto;
+    position: middle;
+    width: 80%;
+}
+.audio-bar input[type="range"] {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #d5d5e6;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background: rgb(224, 153, 87);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.seek-bar {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    appearance: none;
+    height: 5px;
+    background: #007bff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.seek-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#current-time, #total-duration {
+    font-size: 14px;
+    font-weight: bold;
+}
+
